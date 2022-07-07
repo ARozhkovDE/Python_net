@@ -1,0 +1,14 @@
+                                                  name  salary_start  salary_end salary_currency                            href                          company location source
+0                           Data Engineer/ ML Engineer           NaN         NaN            None  https://hh.ru/vacancy/67496107                   ПАО Ростелеком   Москва  hh.ru
+1                                        Data engineer           NaN         NaN            None  https://hh.ru/vacancy/67302519                           ANABAR   Москва  hh.ru
+2                                        Data Engineer           NaN         NaN            None  https://hh.ru/vacancy/67455462                            Aston   Москва  hh.ru
+3    Team Lead (Data Engineering) / Руководитель по...           NaN         NaN            None  https://hh.ru/vacancy/66691203        билайн: ИТ, Data, Digital   Москва  hh.ru
+4                                        Data Engineer           NaN         NaN            None  https://hh.ru/vacancy/67531266                    ООО JSA Group   Москва  hh.ru
+..                                                 ...           ...         ...             ...                             ...                              ...      ...    ...
+626                                 Front-End Engineer           NaN         NaN            None  https://hh.ru/vacancy/66713006       Transcend Technologies LLC   Москва  hh.ru
+627                     Full Stack WordPress Developer           NaN         NaN            None  https://hh.ru/vacancy/66793704                       Beincrypto   Москва  hh.ru
+628           Архитектор хранилища данных (г. Иркутск)           NaN         NaN            None  https://hh.ru/vacancy/66918825  ООО Иркутская нефтяная компания   Москва  hh.ru
+629          Middle/Senior Java разработчик (удаленно)           NaN         NaN            None  https://hh.ru/vacancy/66743316                   ООО А1 Системс   Москва  hh.ru
+630                        DevOps engineer (to Serbia)           NaN         NaN            None  https://hh.ru/vacancy/66728194                  ООО Перфект Арт   Москва  hh.ru
+
+[631 rows x 8 columns]

@@ -15,9 +15,9 @@ import pandas
 from pprint import pprint
 
 
-vacancy = 'Python'
+vacancy = 'Data engineer'
 url = f'https://dolgoprudny.hh.ru/search/vacancy'
-params = {'page': '2', 'text': f'{vacancy}', 'area': '1', 'per_page': 100, 'pages': 100, 'found': 100}
+params = {'page': '2', 'text': f'{vacancy}', 'area': '1', 'items_on_page': 20}
 headers = {'User-agent': 'Mozilla/5.0'}
 session = requests.Session()
 
@@ -91,13 +91,5 @@ df = pandas.DataFrame.from_dict(vacancy_list, orient='columns')
 print(df)
 with open(f'{vacancy}.csv', 'w') as outfile:
     outfile.write(str(df))
-
-# a = 'от 200000 руб.'
-# print(a[0:1])
-#
-# a = a.replace('\u202f', '')
-# a = a[3:a.find(' ', a.find(' ', ) + 1)]
-# print(int(a))
-
 
 
