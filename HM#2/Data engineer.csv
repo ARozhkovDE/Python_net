@@ -1,14 +1,14 @@
-                                                  name  salary_start  salary_end salary_currency                            href                          company location source
-0                           Data Engineer/ ML Engineer           NaN         NaN            None  https://hh.ru/vacancy/67496107                   ПАО Ростелеком   Москва  hh.ru
-1                                        Data engineer           NaN         NaN            None  https://hh.ru/vacancy/67302519                           ANABAR   Москва  hh.ru
-2                                        Data Engineer           NaN         NaN            None  https://hh.ru/vacancy/67455462                            Aston   Москва  hh.ru
-3    Team Lead (Data Engineering) / Руководитель по...           NaN         NaN            None  https://hh.ru/vacancy/66691203        билайн: ИТ, Data, Digital   Москва  hh.ru
-4                                        Data Engineer           NaN         NaN            None  https://hh.ru/vacancy/67531266                    ООО JSA Group   Москва  hh.ru
-..                                                 ...           ...         ...             ...                             ...                              ...      ...    ...
-626                                 Front-End Engineer           NaN         NaN            None  https://hh.ru/vacancy/66713006       Transcend Technologies LLC   Москва  hh.ru
-627                     Full Stack WordPress Developer           NaN         NaN            None  https://hh.ru/vacancy/66793704                       Beincrypto   Москва  hh.ru
-628           Архитектор хранилища данных (г. Иркутск)           NaN         NaN            None  https://hh.ru/vacancy/66918825  ООО Иркутская нефтяная компания   Москва  hh.ru
-629          Middle/Senior Java разработчик (удаленно)           NaN         NaN            None  https://hh.ru/vacancy/66743316                   ООО А1 Системс   Москва  hh.ru
-630                        DevOps engineer (to Serbia)           NaN         NaN            None  https://hh.ru/vacancy/66728194                  ООО Перфект Арт   Москва  hh.ru
+                                                  name  salary_start  salary_end salary_currency                            href                          company                 location source
+0                                 Senior Data Engineer           NaN         NaN            None  https://hh.ru/vacancy/67388861                         inDriver                   Москва  hh.ru
+1    Data Engineer в команду операционных данных банка           NaN         NaN            None  https://hh.ru/vacancy/67573728                  Райффайзен Банк        Москва, Технопарк  hh.ru
+2                                 Junior Data Engineer           NaN         NaN            None  https://hh.ru/vacancy/67136889               Сбер. Data Science                   Москва  hh.ru
+3    Senior Big Data Engineer (Scala, Spark) (to Eu...      350000.0         NaN            руб.  https://hh.ru/vacancy/52219096                             Joom  Москва, Динамо и еще 2   hh.ru
+4                            Machine Learning Engineer           NaN    500000.0            руб.  https://hh.ru/vacancy/67531287                     Spice Agency                   Москва  hh.ru
+..                                                 ...           ...         ...             ...                             ...                              ...                      ...    ...
+606                                   Java-разработчик           NaN         NaN            None  https://hh.ru/vacancy/67097558            Sky Fort Technologies                   Москва  hh.ru
+607                  Java Developer (Message Platform)           NaN         NaN            None  https://hh.ru/vacancy/55287689                         Тинькофф                   Москва  hh.ru
+608                     Presale-консультант/Архитектор           NaN         NaN            None  https://hh.ru/vacancy/66762833            ООО Аренадата Софтвер                   Москва  hh.ru
+609           Архитектор хранилища данных (г. Иркутск)           NaN         NaN            None  https://hh.ru/vacancy/66918825  ООО Иркутская нефтяная компания                   Москва  hh.ru
+610                     Full Stack WordPress Developer           NaN         NaN            None  https://hh.ru/vacancy/66793704                       Beincrypto                   Москва  hh.ru
 
-[631 rows x 8 columns]
+[611 rows x 8 columns]
