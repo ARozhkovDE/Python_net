@@ -8,12 +8,23 @@
 # Структура должна быть одинаковая для вакансий с обоих сайтов.
 # Общий результат можно вывести с помощью dataFrame через pandas. Сохраните в json либо csv.
 
+# UPD 1. Развернуть у себя на компьютере/виртуальной машине/хостинге MongoDB
+# и реализовать функцию, которая будет добавлять только новые вакансии/продукты в вашу базу.
+
+#2. Написать функцию, которая производит поиск и выводит на экран вакансии с заработной платой
+# больше введённой суммы (необходимо анализировать оба поля зарплаты).
+# То есть цифра вводится одна, а запрос проверяет оба поля
+
 
 import requests
 from bs4 import BeautifulSoup
-import pandas
 from pprint import pprint
+from pymongo import MongoClient
+from pymongo import errors
 
+client = MongoClient('127.0.0.1', 27017)
+db = client['Vacancies']
+Vacancies = db.Vacancies
 
 vacancy = 'Data engineer'
 url = f'https://dolgoprudny.hh.ru/search/vacancy'
@@ -74,22 +85,21 @@ while True:
         vacancy_data['company'] = company
         vacancy_data['location'] = location
         vacancy_data['source'] = 'hh.ru'
+        vacancy_data['href_key'] = int(vacancy_data['href'][str(vacancy_data['href']).rfind('/') + 1:])
 
         vacancy_list.append(vacancy_data)
 
     params['page'] = page + 1
     page = params['page']
 
-
-
     if 'дальше' not in span_set:
         break
 
-pandas.set_option('display.max_columns', None)
-pandas.set_option('display.expand_frame_repr', False)
-df = pandas.DataFrame.from_dict(vacancy_list, orient='columns')
-print(df)
-with open(f'{vacancy}.csv', 'w') as outfile:
-    outfile.write(str(df))
+for vacancy in vacancy_list:
+    if Vacancies.find_one({'href': vacancy_data['href']}) is None:
+        Vacancies.insert_one(vacancy)
 
 
+value = 200000
+for item in (Vacancies.find({'$or': [{'salary_start': {'$gte': value}}, {'salary_end': {'$gte': value}}]})):
+    pprint(item)
